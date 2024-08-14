@@ -1,0 +1,60 @@
+.container{
+    min-height: 100vh;
+    background: url(../snake-bg.jpg);
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    background: linear-gradient(rgb(246, 150, 150),rgb(131, 4, 31));
+    width: 60vw;
+    height: 90vh;
+    border: 4px solid rgb(228, 214, 214);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.snake{
+    background-color: purple;
+    border-radius: 17px;
+    
+}
+.head{
+    background : linear-gradient(rgb(224, 231, 28),orange);
+    border-radius: 5px;
+    
+}
+.food{
+    background-color: rgb(222, 234, 56);
+    border: 2px solid black;
+    border-radius: 80px;
+}
+#currscore{
+    position: absolute;
+    top: 29px;
+    right: 35px;
+    font-size: 40px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#highscore{
+    position: absolute;
+    top: 69px;
+    right: 35px;
+    font-size: 40px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+#lifetimeHighscore{
+    position: absolute;
+    bottom: 69px;
+    right: 35px;
+    font-size: 40px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
